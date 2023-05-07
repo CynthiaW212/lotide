@@ -1,9 +1,7 @@
-const eqArrays = require('./eqArrays');
-
+//middle.js
 
 // ACTUAL FUNCTION
 const middle = function(array) {
-  //...
   const midArray = [];
   const length = array.length;
   
@@ -13,6 +11,7 @@ const middle = function(array) {
     if (length % 2 === 0) {
       midArray.push(array[index - 1]);
       midArray.push(array[index]);
+      
     } else if (length % 2 !== 0) {
       midArray.push(array[index]);
     }
